@@ -111,10 +111,11 @@ export default function Listing() {
 
             <div className="flex flex-col max-w-4xl mx-auto p-5 mt-3 gap-3 rounded-2xl bg-blue-300 shadow-2xl">
               <p className="font-semibold uppercase">
-                {listing.name} - ${" "}
-                {listing.offer
-                  ? listing.discountPrice.toLocaleString("en-US")
-                  : listing.regularPrice.toLocaleString("en-US")}
+                {listing.name} -  ₹{" "}
+                {
+               
+                   listing.regularPrice.toLocaleString("en-US")
+                  }
                 {listing.type === "Rent" && (
                   <span style={{ textTransform: "lowercase" }}> / month</span>
                 )}
@@ -127,11 +128,11 @@ export default function Listing() {
 
               <div className="flex gap-4">
                 <p className="bg-red-700 w-full max-w-[200px] text-white text-center p-1 rounded-xl">
-                  {listing.type === "rent" ? "For Rent" : "For Sale"}
+                  {listing.type === "Rent" ? "For Rent" : "For Sale"}
                 </p>
                 {listing.offer && (
                   <p className="bg-green-700 w-full max-w-[200px] text-white text-center p-1 rounded-xl">
-                    ${+listing.regularPrice - +listing.discountPrice} Off
+                    ₹ {listing.discountPrice} Off
                   </p>
                 )}
               </div>

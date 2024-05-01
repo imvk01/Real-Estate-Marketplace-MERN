@@ -19,13 +19,13 @@ export default function ListingItem({ listing }) {
             <p className="text-md font-bold text-blue-900 uppercase">
               {listing.name}
             </p>
+
             <p className="text-slate-500 font-semibold ">
-              $
-              {listing.offer
-                ? listing.discountPrice.toLocaleString("en-US")
-                : listing.regularPrice.toLocaleString("en-US")}
-              {listing.type === "rent" && "/- Month"}
+            ₹
+              {listing.regularPrice.toLocaleString("en-US")}
+              {listing.type === "Rent" && "/- Month"}
             </p>
+            
           </div>
 
           <p className="text-sm text-gray-600 pl-1">{listing.description}</p>

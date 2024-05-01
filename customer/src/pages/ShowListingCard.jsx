@@ -44,7 +44,7 @@ const ShowListingCard = ({
 
       <div className="flex justify-between items-center p-1 rounded-lg">
         <span className="text-lg font-semibold">
-          Amount : ${regularPrice - discountPrice}
+          Amount : ₹ {regularPrice - discountPrice}
         </span>
         {offer && (
           <span className="bg-green-500 text-white text-center rounded-xl p-1 w-[30%]">
@@ -56,7 +56,7 @@ const ShowListingCard = ({
       <div className="flex items-center justify-between p-2 ">
         <div>
           <p>
-            <strong>Regular Price:</strong> ${regularPrice}
+            <strong>Regular Price:</strong> ₹ {regularPrice}
           </p>
           <p>
             <strong>Swimming Pool:</strong> {swimmingpool ? "Yes" : "No"}
@@ -75,7 +75,7 @@ const ShowListingCard = ({
 
         <div>
           <p>
-            <strong>Discount Price:</strong> ${discountPrice}
+            <strong>Discount Price:</strong> ₹ {discountPrice}
           </p>
           <p>
             <strong>Kitchens:</strong> {kitchens}

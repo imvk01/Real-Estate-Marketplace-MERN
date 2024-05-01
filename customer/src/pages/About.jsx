@@ -46,7 +46,7 @@ export default function About() {
         <PhotoWithDescription
             photoUrl={photo1}
             description="Tsering Wangchu"
-            contact="Contact : +91 99717 07580"
+            contact="Contact :+91 91274 27442"
             email="Email : tseringwang4039@gmail.com"
           />
           <PhotoWithDescription
